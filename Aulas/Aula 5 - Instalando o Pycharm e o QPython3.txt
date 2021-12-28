@@ -1,0 +1,11 @@
+########################################## Pycharm ###########################################################
+
+- O Pycharm é uma IDE (integrated Development Environment), um ambiente para interpretar códigos de programação.
+- O Pycharm é feito especialmente para o Python, mas existem diversas outras IDEs para linguagens em geral, como o Visual Studio, por exemplo.
+- No meu caso, prefiro usar o Visual Studio porque estou mais acostumado, então não vou usar o Pycharm.
+
+########################################## QPython3 ##########################################################
+
+- O QPython3 é uma IDE para dispositivos Android. 
+- Assim como o Pycharm, esta IDE é especialmente utilizada para programar com a linguagem Python.
+- Ele não é tão robusto quando o Pycharm, mas é uma boa alternativa para quem deseja programar pelo celular.

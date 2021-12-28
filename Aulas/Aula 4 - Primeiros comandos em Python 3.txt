@@ -1,0 +1,55 @@
+############################################ PRINT ###################################################
+
+- Para todo comando dado, é necessário especificar entre parênteses o seu atributo.
+- O primeiro comando é o PRINT, uma instrução que faz com que o interpretador exiba algo na tela.
+No caso abaixo, a mensagem exibida será um atributo do tipo string (toda string deve estar entre aspas simples
+ou duplas).
+
+>>> print('Hello, world!') ---------> O interpretador exibirá a mensagem "Hello, World" no terminal.
+
+- Também é possível usar o comando PRINT para exibir números. Nesse caso, não se devem utilizar aspas.
+
+>>> print(7 + 4) ---------> O interpretador exibirá o resultado da operação, ou seja, o número 11 será exibido no terminal.
+
+OBS : Se os números da operação acima forem colocados entre aspas, isso não será mais um número, mas uma string!
+
+>>> print('7' + '4') ---------> O interpretador exibirá "74". O símbolo de +, nesse caso, não está somando, está interpolando duas strings.
+
+########################################### Variáveis #################################################################
+
+
+- No python, toda variável é um objeto.
+- As variáveis servem para armazenar valores. Para declará-las no Python, basta dar um nome a ela e receber um valor.
+ex: 
+
+>>> nome = 'Paulo' ---------> a variável "nome" recebe o valor do tipo string "Paulo".
+>>> idade = 26 ---------> a variável "idade" recebe o valor do tipo number "26".
+>>> cidade = 'Rio de Janeiro' ---------> a variável "cidade" recebe o valor do tipo string "Rio de Janeiro".
+
+- Não é necessário declarar o tipo da variável, o Python já faz isso automaticamente.
+
+- É possível utilizar o comando PRINT para exibir variáveis:
+
+>>> print(nome, idade, peso) ---------> O interpretador exibirá "Paulo 26 Rio de Janeiro"
+
+- Veja que, ao invés de utilizar o símbolo de adição +, foram utilizadas vírgulas para interpolar todas as variáveis.
+Quando há variáveis de tipos diferentes, só é possível interpolar utilizando vírgulas.
+
+################################################## INPUT ############################################################
+
+
+- Também é possível solicitar a entrada do usuário e armazená-la em uma variável, essa é a principal utilidade de se
+utilizar variáveis!
+ex:
+
+>>> nome = input('Qual é o seu nome?') 
+
+---------> A mensagem "Qual é o seu nome será exibida e o programa ficará aguardando alguma entrada do usuário.
+Uma vez que o usuário inserir algum valor (exemplo: Creide), este será armazenado na variável "nome".
+- Quando for solicitada a função PRINT, ela exibirá o valor digitado pelo usuário:
+
+>>> print(nome) ---------> O interpretador exibirá "Creide".
+
+
+
+

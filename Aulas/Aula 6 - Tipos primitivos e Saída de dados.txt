@@ -1,0 +1,31 @@
+############################### Tipos Primitivos ###########################
+
+- Os tipos primitivos são aqueles mais básicos e que são comuns em praticamente todas as linguagens de programação existentes. São eles:
+
+• int -----> números inteiros
+• float -----> números com casas decimais
+• bool -----> valores boleanos (True and False)
+• str -----> strings (texto)
+
+- Toda string começa com aspas simples ou duplas;
+- Números entre aspas são, na verdade, strings;
+- No Python, os valores boleanos devem começar com letra maiúscula (True / False).
+
+############################### Conferindo tipos ###############################
+
+- Para conferir o tipo de uma variável, você pode printá-lo, por exemplo, dessa forma:
+
+>>> n1 = 45
+>>> print(type(n1))
+
+- Será exibido o tipo da variável n1, nesse caso, uma variável do tipo int.
+
+- Também é possível conferir se uma variável é de um tipo específico. Exemplo:
+
+• n = Olá
+>>> print(n.isnumeric()) -----> Exibirá "False", porque "Olá" não é numérico
+>>> print(n.isalpha()) -----> Exibirá "True", porque é composto de caracteres
+>>> print(n.isalnum()) -----> Exibirá "True", porque é alfanumérico
+
+- E existem muitos outros "is..."
+

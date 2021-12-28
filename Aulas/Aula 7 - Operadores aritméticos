@@ -1,0 +1,29 @@
+################################## Operadores Aritméticos #########################################
+
+- Os operadores aritmeticos da matemática funcionam de maneira similar na programação. Os operadores utilizados em Python são:
+
+• + -----> adição
+• - -----> subtração
+• * -----> multiplicação
+• / -----> divisão
+• ** -----> potência
+• // -----> divisão inteira
+• % -----> resto da divisão
+• == -----> igual
+
+- De tal forma que:
+
+>>> 5 + 2 == 7
+>>> 5 - 2 == 3
+>>> 5 * 2 == 10
+>>> 5 / 2 == 2.5
+>>> 5 ** 2 == 25 # também pode ser pow(5,2)
+>>> 5 // 2 == 2
+>>> 5 % 2 == 1
+
+- A ordem de precedência é a mesma que conhecemos da matemática.
+
+- Para calcular a raiz quadrada de um número, basta elevar um número a 1/2. Pra raiz cúbica, deve-se elevar a 1/3, e assim por diante:
+
+>>> 81**(1/2) == 9
+>>> 8**(1/3) == 2

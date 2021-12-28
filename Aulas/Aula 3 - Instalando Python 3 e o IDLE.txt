@@ -1,0 +1,8 @@
+- O interpretador Python 3 não vem pré-instalado com o Windows, então é necessário baixá-lo em: <python.org>;
+
+- Além disso, é possível também instalar o IDLE (um ambiente de desenvolvimento, e. g. IDE). Ou outro ambiente
+para poder trabalhar com Python ou qualquer outra linguagem mais facilmente.
+
+OBS: Ao instalar o Python da forma personalizada, mesmo que só para mudar o destino de instalação, não vai mais conseguir abrir o IDLE pelo Start Menu.
+Para abrir o IDLE, nesse caso, é necessário iniciar o arquivo 'idle.bat' dentro da pasta onde está instalado o seu Python. No meu caso, o caminho é:
+"E:\Python 3\Lib\idlelib\idle.bat".
