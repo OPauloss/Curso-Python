@@ -1,0 +1,17 @@
+################# Utilizando módulos no Python #########################
+
+- O Python, assim como outras linguagens, já vem com um conjunto de bibliotecas (ou módulos) instalado, para desempenhar as funções elementares dos programas.
+Existe, porém, outras bibliotecas que podem facilitar ainda mais o processo de criação de programas.
+
+- Para importar uma biblioteca, utiliza-se o comando IMPORT:
+
+>>> import math -----> Todos os itens da biblioteca "math" serão adicionados
+
+- É possível também importar somente uma parte da biblioteca:
+
+>>> from math import sqrt -----> Somente o item "sqrt" será importado de dentro da biblioteca "math".
+
+- Algumas bibliotecas comuns:
+
+• math -----> biblioteca que reúne vários operadores úteis para operações matemáticas.
+• random -----> biblioteca que gera números aleatórios.
