@@ -1,0 +1,144 @@
+############################# Manipulação de cadeia de textos #############################
+
+- Para o Python, toda string deve estar entre aspas simples ou duplas (de preferência, aspas simples).
+- A memória do nosso computador não guarda uma string por completo, mas a reparte em várias partes, cada parte contendo um caracter. Cada caracter dessa string vai ter um número índice, que começa em 0 e sequencia-se até o seu último caracter.
+ex:
+
+>>> frase = 'Curso em vídeo Python'
+
+Curso em vídeo é uma string que tem 21 caracteres (os espaços são incluídos) e sua sequência vai de 0 (caracter "C") até 20 (caracter "n").
+
+######################## Fatiando uma string ########################
+
+- Usando de exemplo a mesma variável declarada acima (frase), podemos localizar o 10º caracter da string.
+ex:
+
+>>> print(frase[9])
+
+ -----> O valor retornado será "í".
+Os colchetes são usados como indicador de lista, ou seja, o item 9 da lista de caracteres da variável frase.
+
+- Podemos selecionar vários caracteres dentro da string, usando a seguinte estrutura:
+
+>>> print(frase[9:13])
+
+ -----> O valor retornado serão os ítens de índice 9 até 12 (o índice 13 não é selecionado, ele apenas marca o final). Ou seja, veremos na tela "Víde".
+
+- Então, para conseguirmos pegar o último item da lista, temos que incluir um número maior que o último índice:
+
+>>> print(frase[9:14])
+
+ -----> "Vídeo"
+
+- Se omitimos o primeiro número da estrutura, ele sempre começará do índice 0:
+
+>>> print(frase[:5]) 
+
+ -----> Valor "Curso" será mostrado.
+Da mesma forma, se omitimos o segundo número da estrutura, ele sempre irá seguir até o final da string:
+
+>>> print(frase[6:])
+
+ -----> Valor "em vídeo Python" será mostrado.
+
+- Também é possível saltar itens de dentro da lista:
+
+>>>print(frase[9:14:2])
+
+ -----> O valor será a mesma cadeia de caracteres acima, só que pulando de dois em dois. Ou seja. será mostrado "Vdo" (mostra "V" pula "í", mostra "d" pula "e", mostra "o" pula " ".)
+
+- Na verdade, pode-se emitir qualquer número da estrutura [começo:fim:sequência]:
+
+>>> print(frase[9::3])
+
+ -----> Começando do índice 9 até o final, de 3 em 3. Ou seja, o valor será "VePh"
+
+######################### Analisando uma string #########################
+
+- Podemos analisar uma string para saber:
+
+• Qual é seu tamanho (length)?:
+
+>>> len(frase)
+
+ -----> O valor "21" será mostrado, porque do índice 0 ao 20, temos 21 caracteres.
+
+• Quantas letras "o" existem?
+
+>>> frase.count('o')
+
+ -----> O valor "3" será mostrado. Letras maiúsculas e minúsculas não são interpretadas igualmente.
+Pode-se, também, fazer separações dentro dessa função:
+>>> frase.count('o',0,13) -----> O valor "1" será mostrado. Do índice 0 ao índice 12, existe somente uma letra "o". Lembre-se que no fatiamento o último item solicitado não é contado.
+
+• Onde aparece a estrutura "deo"?
+
+>>> frase.find('deo')
+
+ -----> O valor "11" será mostrado, porque na estrutura "Curso em vídeo Python", o padrão "deo" aparece a partir do item 11 da lista.
+Se for indicado um valor não existente, o valor retornado será sempre "-1":
+
+>>> frase.find('Android') 
+
+ -----> O valor "-1" será mostrado. Não existe o padrão "Android" na string "Curso em vídeo Python".
+
+• Existe "Curso" na variável frase?
+
+>>> 'Curso' in frase
+
+ -----> O valor "True" será retornado.
+
+############################# Transformação #############################
+
+Podemos transformar os itens de dentro de uma string:
+
+• Trocar elementos:
+
+>>> frase.replace('Python', 'Android')
+
+ -----> O interpretador procurará o valor "Python" e substituirá por "Android". Então, teremos agora na variável frase o valor "Curso em vídeo Android" ao invés de "Curso em vídeo Python".
+
+ • Colocar em maiúsculas, minúsculas e capitalizar:
+
+ >>> frase.upper()
+
+  -----> O valor retornado será "CURSO EM VÍDEO PYTHON". Toda a string será formatada em caixa alta.
+
+>>> frase.lower()
+
+ -----> Contrário de upper: "curso em vídeo python".
+
+>>> frase.capitalize()
+
+ -----> Coloca todos os caracteres em letras minúsculas, exceto o primeiro elemento. Logo, o valor mostrado será "Curso em vídeo python".
+
+>>> frase.title()
+ 
+ -----> Todas as palavras da string serão capitalizadas: "Curso Em Vídeo Python".
+
+• Além disso, é possível remover espaços inúteis dentro de uma string.
+
+>>> frase.strip()
+
+ -----> Caso haja espaços vazios no início ou no final da string, estes serão removidos. 
+
+>>> frase.rstrip()
+
+ -----> remove somente os espaços à direita da string, ou seja, os últimos espaços. Os espaços em branco da esquerda (do início) serão mantidos.
+
+>>> frase.lstrip()
+
+ -----> De forma análoga, remove somente os espaços da esquerda, mantendo os da direita.
+
+• Dividir ou juntar strings
+
+>>> frase.split()
+
+ -----> Divide a string inteira e a transforma em várias strings, de acordo com a quantidade de palavras. Portanto, a linha "Curso em vídeo Python" se transformará em "Curso" "em" "vídeo" "Python". Gerando assim, uma lista de 4 strings, do índice 0 ao 3.
+
+>>> '-'.join(frase)
+
+ -----> Junta a string dentro da variável frase, colocando hífens nos espaços: "Curso-em-vídeo-Python". Pode-se substituir o hífen por um espaço em branco, também. O resultado será a string original, sem hífens.
+------------------------------------------------------------------
+
+#OBS: para printar textos longos, basta colocar a string entre três aspas.
