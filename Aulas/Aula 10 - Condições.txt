@@ -1,0 +1,34 @@
+############################ Condições ############################
+
+- Condicionais são comandos dados para que o programa teste hipóteses e faça a escolha adequada ao contexto proposto.
+Quando criamos um algoritmo qualquer, o nosso programa executa todas as linhas do código escrito até a última linha. Mas, dependendo da situação, podemos optar por não reproduzir uma linha, reproduzindo outro comando no lugar. Escrevi de maneira confusa? XD. Vejamos alguns exemplos, então:
+
+- Suponhamos que, num jogo, temos a opção de salvar o personagem A ou o personagem B. Se salvarmos o A, a história segue por um caminho, se salvarmos o B, a história se desviará para outro caminho. Sendo assim, para criar essas possibilidades de história, temos que usar condicionais para que o programa se comporte da maneira que queremos, dependendo da escolha do usuário. 
+
+- Para estabelecer hipóteses no Python, usamos os comandos "if" e "else" da seguinte forma:
+
+>>> if objeto.método():
+    bloco True
+>>> else:
+    bloco False
+
+- Imaginando que queremos fazer um programa que exiba uma mensagem diferente para cada situação apresentada no programa. Podemos fazer da seguinte forma:
+
+>>> tempo = int(input('Quantos anos tem o seu carro?'))
+>>> if tempo <= 3:
+        print('carro novo')
+>>> else:
+        print('carro velho')
+>>> print('--FIM--')
+
+-----> Foi declarada uma variável "tempo", com a resposta do usuário para a pergunta "Quantos anos tem o seu carro?".
+Se (if) o <<tempo de vida>> desse carro for menor ou igual a 3, a mensagem exibida será "carro novo". Senão (else), a mensagem exibida será "carro velho". Nunca o programa executará as duas linhas, porque não é possível que essa condição seja verdadeira e falsa ao mesmo tempo.
+
+######################### Condição simplificada #########################
+
+No Python, também é possível simplificar as condições em uma só linha:
+ex:
+
+>>> tempo = int(input('Quantos anos tem seu carro?'))
+>>> print('carro novo' if tempo <= 3 else 'carro velho') 
+>>> print('--FIM--')

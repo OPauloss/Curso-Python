@@ -15,3 +15,6 @@ Existe, porém, outras bibliotecas que podem facilitar ainda mais o processo de 
 
 • math -----> biblioteca que reúne vários operadores úteis para operações matemáticas.
 • random -----> biblioteca que gera números aleatórios.
+• time -----> biblioteca que trabalha com tempos de espera e outras coisas relacionadas a tempo
+• date -----> biblioteca que permite trabalhar mais facilmente com datas. É possível puxar a data atual do computador com esse módulo, por exemplo.
+
