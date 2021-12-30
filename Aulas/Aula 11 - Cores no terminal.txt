@@ -1,0 +1,21 @@
+
+
+- Para falar sobre cores no terminal, primeiro é necessário saber o que é o padrão ANSI
+
+- O padrão ANSI é uma normalização internacional que contém Escape Sequences. Tudo dentro de ANSI começa com contrabarra (\) e depois vem um código.
+
+- Para representar uma cor, usamos o código "\033[m". Entre o colchete e a letra M, coloca-se o código da cor desejada.
+
+- Os códigos ANSI para cor seguem o padrão [style;text;background], ou seja, primeiro entramos com o código do estilo, depois o código da cor do texto e, por fim, o código do fundo. Esse é um modelo padrão de código, mas tanto na, verdade, não importa a ordem do style, text ou background, já que eles têm padrões diferentes de numeração.
+
+- Os códigos de estilo mais comuns são 0, 1, 4 ou 7. "0" significa "sem estilo", "1" é negrito, "4" é underline e "7" é negativo (inverte as configurações de fundo e letra).
+
+- Os códigos de texto vão de 30 a 37, sendo branco, vermelho, verde, amarelo, azul, roxo, magenta, cinza, respectivamente.
+
+- Cor de background tem o mesmo padrão de cores que o de texto. Mas são numeradas de 40 a 47.
+
+- Digamos que queremos printar uma frase em vermelho, letras brancas, sem estilo, no terminal. Então inserimos o seguinte código:
+
+>>>print('\033[0;30;41mOlá, mundo!')
+
+-----> O resultado será a frase "Olá, mundo!" só que com as cores definidas acima no terminal.

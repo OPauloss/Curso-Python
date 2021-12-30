@@ -11,4 +11,4 @@ pygame.mixer.music.play()
 input()
 pygame.event.wait()
 
-# Meu exercício só funcionou adicionando uma linha de input(). Talvez ele estava pulando o play e indo direto pra função wait?
+# Meu exercício só funcionou adicionando uma linha de input(). Talvez ele estava dando play na música e a interrompendo logo em seguida, indo direto pra função wait?
