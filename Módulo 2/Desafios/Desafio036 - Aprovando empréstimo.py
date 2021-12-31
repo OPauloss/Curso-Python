@@ -6,8 +6,8 @@ print('='*100)
 #Resolução
 
 #Coletando as informações necessárias
-casa = int(input('Qual é o valor da casa que deseja comprar (em reais)?\n'))
-sal = int(input('Quanto é o seu salário mensal?\n'))
+casa = float(input('Qual é o valor da casa que deseja comprar (em reais)?\n'))
+sal = float(input('Quanto é o seu salário mensal?\n'))
 prazo = int(input('Em quantos anos deseja pagar?\n'))
 prest = casa / (prazo * 12)
 
