@@ -1,4 +1,4 @@
-
+########################## Cores no terminal ##########################
 
 - Para falar sobre cores no terminal, primeiro é necessário saber o que é o padrão ANSI
 
