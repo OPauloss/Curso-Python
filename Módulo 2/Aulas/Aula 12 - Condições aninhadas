@@ -2,10 +2,20 @@
 - Condições aninhadas são, basicamente, condições dentro de condições. Numa estrutura condicional aninhada, normalmente temos mais de 2 condições. Para isso, usamos os comandos "if", "elif" (else if) "else":
 
 >>> if condição 1:
-    ações
+        ações
 >>> elif condição 2:
-    outras ações
+        outras ações
 >>> elif condição 3:
-    mais ações
+        mais ações
 >>> else:
-    ação que é reproduzida se nenhuma das ações acima forem verdadeiras.
+        ação que é reproduzida se nenhuma das ações acima forem verdadeiras.
+
+- Podemos ter um "if" dentro de outro "if":
+
+>>> if condição 1:
+        ações
+        if uma condição dentro da condição 1
+            ações
+    elif condição 2:
+        ...
+        ...

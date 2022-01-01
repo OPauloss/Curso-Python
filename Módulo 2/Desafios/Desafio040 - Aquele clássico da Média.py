@@ -14,8 +14,11 @@ media = (n1 + n2) / 2
 
 #Informando ao usuário
 if media < 5:
+    print(f'Sua média é {media:.1f}')
     print('\033[0;31mREPROVADO\033[m')
 elif media >= 5 and media <= 6.9:
+    print(f'Sua média é {media:.1f}')
     print('RECUPERAÇÃO')
 else:
+    print(f'Sua média é {media:.1f}')
     print('\033[0;36mAPROVADO\033[m')

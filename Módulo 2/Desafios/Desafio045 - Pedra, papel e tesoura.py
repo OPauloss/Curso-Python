@@ -10,7 +10,7 @@ import random
 import time
 
 #Capturando a entrada do usuário e PC
-player = int(input(emojize('Vamos jogar Jokenpô!\nDigite 1 para :punch:\nDigite 2 para :raised_hand:\nDigite 3 para :scissors:\n\n---> ', use_aliases=True)))
+player = int(input(emojize('Vamos jogar Jokenpô!\nDigite [ 1 ] para :punch:\nDigite [ 2 ] para :raised_hand:\nDigite [ 3 ] para :scissors:\n\n---> ', use_aliases=True)))
 pc = random.randint(1,3)
 
 

@@ -1,6 +1,6 @@
 ################################################# História #########################################################
 
-- A linguagem Python foi criada por Guido Van Hossum, em 1989. 
+- A linguagem Python foi criada por Guido Van Rossum, em 1989. 
 Seu intuito era criar uma linguagem de programação simples, visto que os programas feitos em C eram de difícil 
 compreensão. 
 

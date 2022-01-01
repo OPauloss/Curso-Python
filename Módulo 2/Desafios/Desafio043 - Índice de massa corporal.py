@@ -10,8 +10,8 @@ print('='*100)
 #Resolução
 
 #Capturando a entrada do usuário
-peso = float(input('Insira a sua peso: '))
-altura = float(input('Insira o seu altura: '))
+peso = float(input('Insira o seu peso (kg): '))
+altura = float(input('Insira a sua altura (m): '))
 
 #Calculando o IMC e informando ao usuário
 imc = peso / (altura * altura)
@@ -24,4 +24,4 @@ elif imc >= 25 and imc < 30:
 elif imc >= 30 and imc <= 40:
     print('OBESIDADE: IMC: {:.1f}'.format(imc))
 else:
-    print('OBESIDADE MÓRBIDA: IMC: {imc}')
+    print('OBESIDADE MÓRBIDA: IMC: {:.1f}'.format(imc))

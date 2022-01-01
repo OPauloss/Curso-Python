@@ -9,9 +9,13 @@ print('='*100)
 
 #Resolução
 
+#Importando datetime
+from datetime import date
+
 #Capturando a entrada do usuário e calculando sua idade
 ano = int(input('Digite o ano de nascimento: '))
-idade = 2021 - ano
+idade = date.today().year - ano
+print(f'Você tem {idade} anos.')
 
 #Informando a categoria
 if idade <= 9:

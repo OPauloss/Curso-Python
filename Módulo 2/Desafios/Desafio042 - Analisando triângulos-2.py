@@ -17,7 +17,7 @@ triangulo = fabs(b - c) < a < b + c
 
 if triangulo == True and (a == b == c):
     print(f'Com os valores {a}, {b} e {c}, é possível formar um triângulo EQUILÁTERO.')
-elif triangulo == True and (a != b != c):
+elif triangulo == True and (a != b and a != c and b != c):
     print(f'Com os valores {a}, {b} e {c} é possível formar um triângulo ESCALENO')
 elif triangulo == True:
     print(f'Com os valores {a}, {b} e {c}, é possível formar um triângulo ISÓSCELES')

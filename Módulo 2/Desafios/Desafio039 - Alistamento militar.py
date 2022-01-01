@@ -8,15 +8,18 @@ print('='*100)
 
 #Resolução
 
+#importando a biblioteca datetime
+from datetime import date
+
 
 #Capturando a entrada do usuário
 ano = int(input('Digite abaixo o ano do seu nascimento\nData: '))
 
 #Calculando a idade e informando ao usuário
-idade = 2021 - ano
+idade = date.today().year - ano
 if idade < 18:
-    print(f'Você tem {idade} anos. Ainda faltam {18 - idade} anos para o seu alistamento.')
+    print(f'Você tem (ou terá) {idade} anos este ano. Ainda faltam {18 - idade} anos para o seu alistamento.')
 elif idade == 18:
-    print(f'Você tem {idade} anos. Está na hora do seu alistamento! Vá o quanto antes à junta militar mais próxima.')
+    print(f'Você tem (ou terá) {idade} anos este ano. Está na hora do seu alistamento! Vá o quanto antes à junta militar mais próxima.')
 else:
-    print(f'Você tem {idade} anos. O prazo para o seu alistamento já passou! Informe-se na junta militar mais próxima.')
+    print(f'Você tem (ou terá) {idade} anos este ano. O prazo para o seu alistamento já passou! Informe-se na junta militar mais próxima.')
