@@ -3,6 +3,6 @@ print('Faça um programa que leia um número inteiro e diga se ele é ou não um
 print('='*100)
 
 #Lendo a entrada do usuário
-import math
+primo = num 
+
 num = int(input('Insira um número inteiro: '))
-if math.

@@ -8,10 +8,11 @@ print('='*100)
 
 
 #OPERANDO
+soma = 0
 for num in range(0,6):
    num = int(input('Insira o próximo número: '))
    if num % 2 == 0:
-       soma = num
+       soma = soma + num
 else:
-        soma = num + 0
+        soma = soma + 0
 print(f'O resultado da soma dos números pares é: {soma}')
