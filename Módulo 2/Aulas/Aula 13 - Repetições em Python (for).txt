@@ -1,0 +1,29 @@
+##################### Estruturas de repetição #####################
+
+ - Estrutura "for" ---> É uma estrutura que repete uma ação até um limite determinado:
+
+>>> for c in range(1, 10):
+    ação
+
+-----> vai repetir a ação enquanto "c" não chegar a 10. Chegando a 10, a repetição para. É possível, também, colocar diversas ações dentro da estrutura de repetição.
+
+>>> for c in range(0, 10):
+    ação
+    ação2
+    ação3
+
+-----> Repete as ações dentro na estrutura, na ordem que foi colocada, 10 vezes (considera-se 0 a primeira repetição e 10 o fim. O item 10 não entra).
+
+- Para repetir de trás para frente, coloca-se "-1" no final do range:
+
+>>> for c in range(10, 0, -1)
+    print(c)
+
+-----> O item 10 será o primeiro, depois o 9, depois o 8...
+
+- Se, no lugar de "-1" coloca-se um número positivo, "2" por exemplo, ele vai repetir cada 2 ações, pulando as anteriores. EX:
+
+>>> for c in range(0, 10, 2):
+    print(c)
+
+-----> Ele printará o 0º termo, depois o 2º, depois o 4º... até 10 exclusive.
