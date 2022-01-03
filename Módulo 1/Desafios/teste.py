@@ -5,6 +5,14 @@
 
 ########################################
 
-for c in range(0, 10, 2):
+#for c in range(0, 10):
+    #print(c)
+#print('FIM')
+
+########################################
+
+c = 1
+while c < 10:
     print(c)
-print('FIM')
+    c += 1
+print('fim')

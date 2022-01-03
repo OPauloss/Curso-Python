@@ -1,0 +1,12 @@
+##################################### Estruturas de repetição #####################################
+
+- Diferente do "for" que é uma estrutura que se repete até um determinado limite, a estrutura "while" repete-se indefinidamente, até que alguma condição seja sanada.
+
+- Usamos o "while" quando não sabemos exatamente quando uma condição ocorrerá, devendo repetir a estrutura até que essa condição aconteça.
+
+- A sintaxe do "while" funciona da seguinte forma
+
+>>> while not ISSO
+        ação
+
+-----> Ou seja, enquanto NÃO acontecer ISSO, repita a ação.
