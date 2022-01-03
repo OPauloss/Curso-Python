@@ -3,18 +3,19 @@ print('='*100)
 
 #Resolução
 from random import randint
+pc = randint(0, 10)
 
 cont = 0
 soma = 0
 
 while cont == 0:
     player = int(input('Digite um número de 0 a 10: '))
-    pc = randint(0, 10)
 
     if player == pc:
+        soma += 1
         print(f'O Computador pensou em {pc}, você pensou em {player}. Parabéns, você GANHOU!!')
         print(f'Foram necessárias {soma} tentativas para vencer.')
         cont = 1
     elif player != pc:
-        print (f'O Computador pensou em {pc}, você pensou em {player}. Que pena, você ERROU!')
+        print (f'Você pensou em {player}. Que pena, você ERROU!')
         soma += 1
