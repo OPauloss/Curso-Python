@@ -1,0 +1,22 @@
+######################### Interrompendo repetições ##########################
+
+- Às vezes, queremos interromper um laço de repetição que está em loop infinito. Suponhamos que o programa repete uma ação determinada até que ele chegue a uma determinada solução. Porém, se uma outra hipótese for sanada, eu não preciso chegar até aquela solução. Para isso, utilizamos o comando "break". 
+- O comando "break" cria uma solução para loopings em que é preciso criar uma variável vazia e depois mudar o seu valor somente com a intenção de parar o laço. Uma "gambiarra", como essa aqui:
+
+>>> n = s = 0
+>>> while n != 999
+>>>     n = int(input('Digite um número: '))
+>>>     s += num
+>>>s -= 999
+print(f'A soma vale {s})
+
+- O mesmo pode ser feito da seguinte forma, mas sem ter que subtrair o valor 999 para obter a soma desejada:
+
+>>> n = s = 0
+>>> while True:
+>>>     n = int(input('Digite um número: '))
+>>>     if n == 999
+>>>            break    
+>>> print('Acabou)
+
+- Quando se usa "while True:" o programa entra em loop infinito, o comando break localiza a flag (999), desconsidera-o e fecha o loop.
