@@ -17,4 +17,4 @@ while resp in 'sS':
     print (f'Valor: R${valor}. Você receberá as seguintes cédulas:\nR$50: {onça}\nR$20: {mico}\nR$10: {arara}\nR$1: {flor}')
     resp = str(input('Quer continuar a sacar valores? [S/N]: ')).strip()
     if resp in 'Nn':
-        print('Obrigado e volte sempre!')
+        print('Obrigado e volte sempre! ')
