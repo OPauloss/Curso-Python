@@ -1,0 +1,52 @@
+############################### TUPLAS ###############################
+
+- Tuplas são variáveis compostas. Diferentes das variáveis simples, que carregam um só valor dentro delas, uma tupla pode receber diversos valores. 
+- Os itens dentro de uma tupla são ordenados por seu número índice. Ou seja, de 0 até seu último item.
+
+- Para declarar uma tupla, fazemos de maneira parecida com a declaração de variáveis simples, a diferença é que colocamos os valores entre parênteses separados por vírgula.
+Nota: depois do python 3, é possível declarar tuplas sem que estejam entre parênteses.
+ex:
+
+lanche = 'Hamburguer', 'Suco', 'Pizza', 'Pudim', 'Batata'
+
+- Para imprimir um item específico da tupla, por exemplo, fazemos:
+
+>>> print(variável[2])
+
+-----> Aqui estamos selecionando o item de índice 2 dentro da tupla. Ou seja: 'Pizza'.
+
+- Diferente das variáveis simples, Tuplas são imutáveis, isto é, não é possível alterar nenhum dos valores dentro da tupla depois.
+
+- Pode-se colocar valores de diferentes tipos dentro de uma tupla, string com int com float com bool....
+
+- Também é possível organizar os itens da tupla em ordem alfabética, utilizando a função "sorted":
+
+>>> print(sorted(lanche))
+
+-----> ['Batata', 'Hamburguer', 'Pizza', 'Pudim', 'Suco']
+
+################################# TUPLAS DENTRO DA ESTRUTURA FOR #################################
+
+- Para utilizar Tuplas dentro de uma estrutura "for" podemos fazer das seguintes formas:
+
+for i in range(0, len(lanche)):
+    print(f'Vou comer {lanche[i]}')
+
+ou:
+
+for i in lanche:
+    print(f'Vou comer {i}')
+
+Nos dois casos, o resultado será o mesmo:
+
+-----> Vou comer Hambúrguer
+       Vou comer Suco
+       Vou comer Pizza
+       Vou comer Pudim
+       Vou comer Batata
+
+- Também é possível enumerar os itens dentro de for:
+
+for pos, i in enumerate(lanche)
+    print(f'Vou comer {i} na posição {pos})
+
