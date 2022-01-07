@@ -1,0 +1,60 @@
+
+- A grande diferença das Listas em relação às Tuplas é o fato de que as listas são mutáveis, ou seja, é possível apagar somente um elemento da lista e substituir por outro, por exemplo. Ou até mesmo adicionar elementos!
+
+###################### Manipulando elementos em listas ######################
+- Crio uma lista com 5 elementos:
+
+>>> lista = ['hamburguer', 'suco', 'pizza', 'sorvete', 'cookie']
+
+Se quiser, podemos adicionar mais um elemento à lista com os comandos:
+
+>>> lista.append('pudim')
+-----> Até o momento, existiam os elementos [0],[1],[2],[3] e [4]. Usando o "apprend", o Python criará um novo index e adicionará o novo objeto no index [5].
+
+>>> lista.insert(0.'pudim')
+-----> Neste caso, é possível, além de adicionar um novo item à lista, escolher qual será a posição dele. No comando acima, incluímos 'pudim' no index 0 da lista. Os demais itens serão reordenados de acordo com a sua posição anterior. Item 0 passa a ser o 1, item 1 passa a ser o 2 e etc...
+
+#######################################
+
+- É possível, também, APAGAR os elementos de dentro de uma lista:
+
+>>> del lista[3]
+-----> o item 3 dentro da lista será apagado.
+
+Ou
+
+>>>>> lista.pop(3)
+-----> Utilizamos o método "pop" para apagar o item 3 da lista. Porém, normalmente o método "pop" é usado para apagar o último item da lista, não precisando colocar parâmetros dentro do método.
+
+Também podemos usar o método REMOVE
+
+>>> lista.remove('pizza')
+-----> Deste modo, não colocamos o índice, mas o próprio objeto como parâmetro.
+
+#######################################
+
+- Podemos criar uma lista com valores numéricos utilizando o range!
+
+>>>>> valores = list(range(4,11))
+-----> Isto é, criamos a variável valores e dentro dela adicionamos uma lista com valores de 4 até 10. Indo do índice 0 ao 6. Sendo o elemento[0] o número 4 e o elemento[6] o número 10.
+Isso é especialmente útil para colocar variáveis dentro dos valores.
+
+- Senão, podemos adicionar números em uma lista no método tradicional:
+
+>>> valores = [8,2,5,4,9,3,0]
+-----> Será criada uma lista com os valores colocados, na ordem colocada.
+
+- Utilizando o método "sort", similar ao "sorted" das tuplas, reorganizamos a lista em ordem crescente.
+
+>>> valores.sort()
+-----> valores agora terá [0,2,3,4,5,8,9]
+
+- De trás pra frente também é possível:
+
+>>> valores.sort(reverse=True)
+-----> valores agora terá [9,8,5,4,3,2,0]
+
+- Dá pra saber quantos elementos existem dentro de uma lista, usando o método len:
+
+>>> len(valores)
+-----> O valor 7 será mostrado, porque existem 7 números, de 0 a 6 no index.

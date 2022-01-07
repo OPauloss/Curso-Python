@@ -26,9 +26,18 @@
 #print('acabou')
 
 ########################################
-lanche = ('Hamburguer', 'suco', 'pizza', 'pudim')
-print(lanche)
+#lanche = ('Hamburguer', 'suco', 'pizza', 'pudim')
+#print(lanche)
 
 ########################################
 
+#valores = []
+
+#for i in range(0,5):
+  #  valores.append(input('Digite um valor: '))
+
+#for i, val in enumerate(valores):
+ #   print(f'Achei o valor {val} na #posição {i}')
+#print('FIM')
+####################################
 
