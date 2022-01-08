@@ -1,0 +1,23 @@
+#######################################Listas #######################################
+
+- Já vimos que as listas permitem armazenar diversos valores dentro dela. No entanto, além disso, podemos armazenar outra lista dentro de uma lista.
+
+>>> lista1 = ['Pedro', 25, 'Maria', 19, 'João', 32]
+>>> pessoas = list()
+>>> pessoas.append(lista1[:])
+
+>>> pessoas = [['Pedro',25],['Maria',19],['João',32]]
+
+-----> Dá pra perceber, pelos colchetes, que, se já temos várias listas com dados criadas, podemos colocar elas dentro de uma outra macro lista. Ou seja, na lista pessoas, temos mais 3 listas com dados de pessoas.
+
+- Continuamos podendo manipular os elementos únicos dentro das listas. Dado que:
+
+>>> print(pessoas[0][0])
+
+-----> corresponde ao item 0 da lista maior ('Pedro', 25), no item 0 da lista menor ('Pedro'). Ou seja, o valor impresso será: 'Pedro'.
+
+Do mesmo modo:
+
+>>> print(pessoas[1][1])
+
+-----> Corresponde a 19, porque o item 1 dentro da lista maior é ['Maria',19] e o item 1 dentro da lista menor é 19.

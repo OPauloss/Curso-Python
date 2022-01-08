@@ -3,7 +3,19 @@ print('Crie um programa em que o usuário digite uma expressão qualquer que use
 #Resolução
 
 exp = list()
+pilha = []
 
-exp = int(input('Digite uma expressão: '))
-inverso = exp.sort(reverse=True)
-print(inverso)
+exp = str(input('Digite uma expressão: '))
+for simb in exp:
+    if simb == '(':
+        pilha.append('(')
+    elif simb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressão é válida.')
+else:
+    print('Sua expressão não é válida.')
