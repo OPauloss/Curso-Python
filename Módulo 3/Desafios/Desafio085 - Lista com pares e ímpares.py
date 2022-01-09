@@ -28,6 +28,3 @@ for i in range(0,7):
         numeros[1].append(valor)
 print(f'Os valores pares são {sorted(numeros[0])}')
 print(f'Os valores ímpares são {sorted(numeros[1])}')
-numeros[0].sort()
-numeros[1].sort()
-print(f'Os valores todos são {numeros}')

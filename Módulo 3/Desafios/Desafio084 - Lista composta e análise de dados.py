@@ -13,11 +13,10 @@ while True:
     pessoas.append(dado[:])
     peso.append(dado[1])
     dado.clear()
-    esc = str(input('Continuar?')).strip()[0]
+    esc = str(input('Continuar? [s/n]: ')).strip()[0]
     if esc not in 'Ss':
         break
 
-print(pessoas)
 print(f'Foram cadastradas {len(pessoas)} pessoas')
 peso.sort()
 print(f'O maior peso é {peso[-1]}KG. Peso de ', end='')
