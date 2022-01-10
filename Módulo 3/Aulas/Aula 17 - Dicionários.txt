@@ -1,0 +1,9 @@
+############################### Dicionários ###############################
+
+- Os dicionários em Python são como as listas, a diferença é que ao invés de ter índices numéricos, os dicionários podem ter índices literais personalizados.
+
+- Os dicionários são indentificados com o uso de chaves "{}". Podendo ser declarados dessa forma, ou usando "variavel = dict()"
+
+- Diferente das listas, em que devemos usar o "append()" para adicionar elementos. Nos dicionários, basta declarar um novo índice.
+>>> variavel['sexo'] = 'M'
+

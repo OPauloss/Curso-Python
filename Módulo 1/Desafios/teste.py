@@ -41,14 +41,18 @@
 #print('FIM')
 ####################################
 
-teste = list()
-teste.append('Gustavo')
-teste.append(40)
-print(teste)
+#teste = list()
+#teste.append('Gustavo')
+#teste.append(40)
+#print(teste)
 
-galera = list()
-galera.append(teste[:])
-teste[0] = 'Maria'
-teste[1] = 33
-galera.append(teste[:])
-print(galera)
+#galera = list()
+#galera.append(teste[:])
+#teste[0] = 'Maria'
+#teste[1] = 33
+#galera.append(teste[:])
+#print(galera)
+
+#pessoas = {'nome': 'Paulo','idade': 26, 'sexo': 'M'}
+#print(pessoas['idade'])
+#print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
