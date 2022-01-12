@@ -1,0 +1,16 @@
+###################### FUNÇÕES ######################
+
+- Uma função é uma sequência de códigos transformados em uma rotina. Sendo assim, quando repetimos muito uma estrutura de códigos, podemos simplesmente transformá-la em uma função que vai reproduzir todas as aquelas linhas com um só comando.
+
+- Para declarar uma função, usamos o comando "def" antes do nome da função, que será criado pelo programador. E faremos a seguinte estrutura:
+
+>>> def nomeFuncao()
+    conteudo
+
+- No conteúdo, podemos colocar, por exemplo uma mensagem como parâmetro, que será repetido tbm na chamada da função:
+
+>>> def nomeFuncao(msg)
+    print('-------------')
+    print(msg)
+    print('--------------')
+

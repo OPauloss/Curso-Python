@@ -6,20 +6,29 @@
 
 jogador = dict()
 gols = []
+lista = list()
 
-jogador['nome'] = str(input('Nome do jogador: ')).strip().capitalize()
-jogador['partidas'] = int(input(f'{jogador["nome"]} jogou quantas partidas? --> '))
-for partida in range(0,(jogador['partidas'])):
-    gols.append(int(input(f'Quantos gols na partida {partida}? ')))
-    jogador['gols'] = gols
+while True:
+    jogador.clear()
+    gols.clear()
+    jogador['nome'] = str(input('Nome do jogador: ')).strip().capitalize()
+    jogador['partidas'] = int(input(f'Quantas partidas {jogador["nome"]} jogou? : '))
+    for p in range(jogador['partidas']):
+        gols.append(int(input(f'Quantos gols na partida {p}?: ')))
+    jogador['gols'] = gols[:]
     jogador['total'] = sum(gols)
+    lista.append(jogador.copy())
+    resp = str(input('Quer continuar? [S/N]: ')).strip()[0]
+    while resp not in 'SsNn':
+        print('ERRO: Por favor, digite apenas S ou N.')
+        resp = str(input('Quer continuar? [S/N]: ')).strip()[0]
+    if resp in 'Nn':
+        break
+print()
 print('-='*30)
-print(jogador)
-print('-='*30)
-for k, v in jogador.items():
-    print(f'{k}: {v}')
-print('-='*30)
-print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} partidas.')
-for partida in range(jogador['partidas']):
-    print(f'--> Na partida {partida} fez {gols[partida]} gols.')
-print(f'Foi um total de {jogador["total"]} gols.')
+for k, v in enumerate(lista):
+    print(f'{k:>3}', end=' ')
+    for d in v.values():
+        print(f'{str(d):<15}',end='')
+    print()
+
