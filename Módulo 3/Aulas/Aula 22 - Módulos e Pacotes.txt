@@ -1,0 +1,13 @@
+####################### Modularização ##########################
+
+- Modularizar significa criar módulos. 
+
+- O conceito de modularização surgiu na década de 60, quando os programas estavam ficando cada vez maiores.
+
+- O objetivo da modularização são: tornar o programa menor, dividir um programa que é grande; aumentar a legibilidade; facilitar a manutenção do sistema.
+
+- Imaginemos que um programa fique enorme, com diversas funções. O que se pode fazer nesse caso é: pegar todas as funções utilizadas e colocá-las dentro de um outro arquivo chamado "uteis.py" por exemplo. Para fazer a ligação do arquivo novo com o código principal, basta escrever, dentro do código principal, o comando "import uteis". Desse modo, todas as linhas de código que estão dentro de uteis.py serão importadas para dentro do programa principal. O mesmo ocorre quando importamos uma biblioteca já conhecida como 'math' ou 'datetime'.
+
+- Uma vez importada a biblioteca que foi criada, basta iniciá-lá como se faz com os módulos tradicionais.
+
+>>> uteis.funcao()
