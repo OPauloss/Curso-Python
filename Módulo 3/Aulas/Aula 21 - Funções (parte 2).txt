@@ -1,0 +1,30 @@
+####################### INTERACTIVE HELP ########################
+
+
+- Digitando o método "help()", o terminal retornará um painel de ajuda interativa. Um manual que mostra todas as particularidades de funções, módulos, etc, do Python.
+
+############### DOCSTRING ###############
+
+- Caso a função para a qual se queira ajuda for uma função criada por um usuário, isto é, se não for uma função interna do Python, o "help()" retornará uma DOCSTRING (uma ajuda escrita pelo próprio usuário). Para escrever uma DOCSTRING, basta abrir aspas duplas três vezes abaixo da declaração de função "def". Dentro das aspas, o usuário escreve as informações que julga pertinentes.
+
+################### Escopo de variáveis #########################
+
+- Escopo de variáveis é, a grosso modo, o local onde a variável existe e onde a variável não existe.
+
+- No escopo global, todas as variáveis funcionam em todo lugar do programa. É o escopo padrão. Quando uma variável é declarada apenas dentro de uma função, ela só funcionará dentro da função. Ou seja, o escopo dela local.
+
+####################### Retorno ##################################
+
+- Quando se quiser ter personalização de resultados, talvez seja melhor utilizar um "return" dentro da função. O return faz com que o valor retornado seja salvo dentro de uma variável no escopo global. Ex:
+
+>>> def somar(a=0,b=0,c=0)
+>>>     s = a + b + c
+>>>     return s
+>>>
+>>>
+>>> r1 = somar(3,2,5)
+>>> r2 = somar(1,7)
+>>> r3 = somar(4)
+>>> print(f'Meus cálculos deram {r1}, {r2} e {r3}.')
+
+-----> Basicamente, a função somar executou o código para fazer a soma de três valores e retornou o seu valor para as variáveis r1, r2 e r3.
