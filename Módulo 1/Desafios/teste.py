@@ -56,3 +56,7 @@
 #pessoas = {'nome': 'Paulo','idade': 26, 'sexo': 'M'}
 #print(pessoas['idade'])
 #print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+
+pontos = (0,5,6,4,7,1,3)
+
+print(sorted(pontos))
