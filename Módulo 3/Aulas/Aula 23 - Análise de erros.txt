@@ -1,0 +1,11 @@
+################## Análise de erros ##################
+
+- Os erros do Python nem sempre são causados por erros sintáticos, às vezes os erros são de outras ordens:
+
+- NameError: Quando uma variável não é inicializada, e queremos, por exemplo, printá-lo na tela. Receberemos um NameError (name is not defined)
+
+- ValueError: Quando recebe-se um valor diferente daquele que foi pedido. Quando colocamos uma string onde se pede um número Int, por exemplo.
+
+- ZeroDivisionError: Quando se tenta dividir um número por 0.
+
+--> O Python Exception List (procurar no google) nos mostra toda a lista de exceções/erros do Python e o que esses erros significam.
